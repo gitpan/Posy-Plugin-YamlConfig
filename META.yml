@@ -1,17 +1,17 @@
 --- #YAML:1.0
 name: Posy-Plugin-YamlConfig
-version: 0.40
+version: 0.41
 author:
   - Kathryn Andersen
-abstract: Posy plugin to read config files in YAML format
+abstract: Posy plugin to read config files in YAML format.
 license: perl
 requires:
-  Posy: 0.4
+  Posy: 0.9
   YAML: 0.35
 build_requires:
   Test::More: 0
 provides:
   Posy::Plugin::YamlConfig:
     file: lib/Posy/Plugin/YamlConfig.pm
-    version: 0.40
+    version: 0.41
 generated_by: Module::Build version 0.2607
