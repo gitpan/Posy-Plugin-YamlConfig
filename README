@@ -1,0 +1,58 @@
+
+==== NAME ====
+
+Posy::Plugin::YamlConfig - Posy plugin to read config files in YAML format
+
+
+==== VERSION ====
+
+This describes version ``0.40'' of Posy::Plugin::YamlConfig.
+
+
+==== DESCRIPTION ====
+
+This uses the YAML module to parse config files, instead of the default
+name:value format. This enables config values to be more complicated than
+simple strings; they can be arrays and hashes, put in a simple format that's
+user-friendly.
+
+For a simple name:value set of config variables, the only difference between
+YAML format and Posy::Core format is that the file has to start with a line
+of three dashes:
+
+    ---
+    site_title: My Wonderful Site
+    sort_type: path
+
+See "YAML" for further details of YAML format. If you have problems with a
+particular config file, use the ysh program to help figure out what's wrong
+and fix it. (If the YAML module is installed, so should ysh be)
+
+This replaces the 'read_config_file' method, and returns the hash of values
+read.
+
+
+==== REQUIRES ====
+
+    Posy
+    Posy::Core
+
+    YAML
+
+    Test::More
+
+
+==== AUTHOR ====
+
+    Kathryn Andersen (RUBYKAT)
+    perlkat AT katspace dot com
+    http://www.katspace.com
+
+
+==== COPYRIGHT AND LICENCE ====
+
+Copyright (c) 2004-2005 by Kathryn Andersen
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
